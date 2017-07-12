@@ -1,0 +1,48 @@
+@charset "UTF-8";
+//常用变量------------------------------
+$ff: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei", 'Simsun', sans-serif;
+$ff-yh: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei", 'Simsun', sans-serif;
+$ff-m:"Microsoft YaHei",Arial,sans-serif;
+
+//文字大小
+$fz: rem(26px); //字体大小
+$lh: 1; //字体行距
+
+//文字色
+$zs-m1: #333; //主字体色,用于正文，文本
+$zs-m2: #fff; //反色，用于有深色背景的文字
+$zs-d1: #999; //用于次要文本
+$zs-d2: #ccc; //弱化文本
+
+
+//背景
+$bg-m1: #fff;  //主要背景,块级元素的背景
+$bg-m2: #f0f0f0; //次要背景
+$bg-d1: #0086D1;
+$bg-d2: #f9fafb;
+
+
+//按钮背景
+$bnbg-m1: #428bca;
+$bnbg-m2: #fff;
+$bnbg-d1: #606064;
+$bnbg-d2: #BC252A;
+
+//表格奇偶行-背景
+$tabo-even-bg:#F6F7FA;
+$tabo-even-bg-hover:#51C150;
+
+
+//线条
+$xs-m1: #ddd;
+$xs-m2: #fff;
+$xs-d1: #f4f4f4;
+$xs-d2: #f4f4f4;
+
+//a链接颜色
+$as-m1:#0086D1;
+$as-m2:#0086D1;
+$as-d1:#fff;
+$as-d2:#0086D1;
+
+

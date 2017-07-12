@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+//sass组件-----------------------------
+@import 'd:/ws/ss/_sscss-set';
+@import 'd:/ws/ss/_sscss-mixin';
+
+$path: '../../src/img/';
+
+//用户
+.userseting {
+  & .tc-btu {
+    @include ss(() (p 20));
+  }
+  @include ss(() ());
+  & .us-tit {
+    @include ss((who 100% 200) (lh 200px) (tac));
+  }
+  & .mint-cell-wrapper {
+    @include ss(() (p 0));
+    background-image: none
+  }
+  & .mint-cell-title {
+    @include ss((p 0 10) ());
+  }
+  & .mint-cell-value {
+    @include ss(() (p 0 10));
+  }
+}

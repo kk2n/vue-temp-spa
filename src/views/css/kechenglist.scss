@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+//sass组件-----------------------------
+@import 'd:/ws/ss/_sscss-set';
+@import 'd:/ws/ss/_sscss-mixin';
+
+$path: '../../src/img/';
+
+.kechenglist{
+  & .mint-tab-item-label {
+    @include ss(() (fz 14));
+  }
+  & .mint-navbar .mint-tab-item.is-selected{
+    @include ss(() (bd 0));
+    &::after {
+      @include ss((con '') (db) (cb)(w 30)(bdrs 2)(bd 2px #3E90F4)(jzc)(por)(b -14));
+    }
+  }
+  &.kcinfo {
+    & .mint-cell-wrapper {
+      background-image:linear-gradient(180deg,#d9d9d9,#d9d9d9 50%,transparent 0);
+    }
+  }
+  & .mint-cell-wrapper {
+    background-image:none;
+  }
+
+  & .ke-list {
+    @include ss((who) (p 5 15 0));
+    & ul {
+      @include ss(()(p 10 0 5));
+      &::after {
+        @include ss((con '') (db) (cb));
+      }
+      &:nth-of-type(1){
+        @include ss((fl) (w 33%));
+      }
+      &:nth-of-type(2){
+        @include ss(() (w auto)(ml 1%));
+      }
+    }
+  }
+  & .klie-img {
+    @include ss(() (wh auto 70));
+  }
+  & .klist-tit {
+    @include ss((fz 14) (c #333)(lh 22px)(d2)(h 44)(mb 10));
+  }
+  & .klist-tag {
+    @include ss((c #999) (w 100%));
+    & span {
+      @include ss((di)(wh auto 15)(pr 12));
+      &:nth-of-type(2) {
+        @include ss(() (bdl 1px)(pl 12));
+      }
+    }
+  }
+  & .line {
+
+  }
+  & .con-txt {
+    @include ss((fz 16) (lh 34px)(p 20));
+  }
+  & .loadmore {
+    @include ss(() (ho 360 auto)(mb 50));
+  }
+  & .loading {
+    @include ss((who 40 40) (bg 'loading.gif' c c)(bgs 100%)(jzc));
+  }
+  & .nodata {
+    @include ss((who 100% 40)(lh 40px)(jzc));
+  }
+}

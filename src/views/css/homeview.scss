@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+//sass组件-----------------------------
+@import 'd:/ws/ss/_sscss-set';
+@import 'd:/ws/ss/_sscss-mixin';
+
+$path: '../../src/img/';
+//头部-
+.index {
+
+  @include ss(() (who)(pb 20));
+  & .mintui {
+    @include ss((fz 21) ());
+  }
+  & .huandeng {
+    @include ss(() (por));
+  }
+  & .islider-dot-wrap {
+    @include ss(() (b 10));
+  }
+  & .islider-dot {
+    @include ss((wh 6 6) ());
+  }
+  & .huan-deng-cn {
+    @include ss((wh auto 150) ());
+    & .huan-d1 {
+      @include ss((wh 100% 150) (bg 'ban.png' c c) (bgs 100% 100%));
+    }
+    & .huan-d2 {
+      @include ss((wh 100% 150) (bgc #57e2ff));
+    }
+    & .huan-d3 {
+      @include ss((wh 100% 150) (bgc #b780ff));
+    }
+
+  }
+  & .slick-dotted {
+    &.slick-slider {
+      @include ss(() (mb 0));
+    }
+  }
+  & .slick-dots {
+    @include ss((b 0) ());
+    & li button:before {
+      @include ss((wh 8 8) (bdrs 8) (con '') (bgc #fff));
+    }
+  }
+  & .gongneng {
+    @include ss((who 100% auto) (p 0 15));
+    & > span {
+      @include ss((wh 100%/3 94) (lh 153px) (db) (fl) (tac) (c #666) (fz 14));
+    }
+  }
+  & .ping {
+    @include ss(() (bg 'pj-inc.png' c 15) (bgs auto 47px));
+  }
+  & .shang {
+    @include ss(() (bg 'shang-inc.png' c 15) (bgs auto 47px));
+  }
+  & .bao {
+    @include ss(() (bg 'bao-inc.png' c 15) (bgs auto 47px));
+  }
+  & .tuijian-img {
+    @include ss((wh 100%) (jzc) (p 15) (pt 0));
+    &::after {
+      @include ss((con '') (db) (cb));
+    }
+    & .img-ui {
+      @include ss(() (bgc #fff));
+    }
+    & .tit-ui {
+      @include ss((fz 15px) (lhh 36) (tal) (pl 0) (d1) (who 100% (36px)));
+    }
+    & .jia-ui {
+      @include ss((mt 4) ());
+      & .jia-li {
+        @include ss((fz 14) (c #f60) (fl));
+        &:before {
+          @include ss((con '￥') ());
+        }
+      }
+      & .shu-li {
+        @include ss((fz 14) (c #999) (fr));
+        &:after {
+          @include ss((con '人学习') ());
+        }
+      }
+    }
+  }
+  & .tujian-tu {
+    @include ss((who 100% 129) ());
+  }
+  & .tujian-tu-load {
+    @include ss((who 100% 129) (jzc) (p 0));
+  }
+  & .tuijian > a {
+    @include ss(() (bg 'xiaog.png' l 17) (bgs auto 13px));
+  }
+  & .steam > a {
+    @include ss(() (bg 'xiaog.png' l c) (bgs auto 13px));
+  }
+  & .mint-cell-text {
+    @include ss((fz 15) ());
+  }
+  & .mint-cell-value span {
+    @include ss((fz 14) (c #666));
+  }
+
+  //steam
+  & .steam-zn {
+    @include ss((p 15) (pt 0) (who));
+    & ul {
+      @include ss((w (100%-6%)/2) (fl) (mb 18));
+      &:nth-of-type(2n) {
+        @include ss(() (ml 6%));
+      }
+      & li.img-ff {
+        @include ss((who 100% 110) ());
+        & .steam-zhu-img {
+          @include ss((wh 100% 100%) ());
+        }
+      }
+      & li.steam-tit {
+        @include ss((fz 14) (lh 34px) (d1) (who 100% 34));
+        &::after {
+          @include ss((con '') (db) (cb));
+        }
+      }
+      & .steam-tit2 {
+        @include ss((fl) (c #f60)(fz (14px)));
+        &:before {
+          @include ss((con '￥') ());
+        }
+      }
+      & .steam-tit3 {
+        @include ss((fr) (c #999)(fz (14px)));
+        &:after {
+          @include ss((con '人学习') ()(fz (14px)));
+        }
+      }
+    }
+  }
+  
+  & .mb-zz {
+    @include ss(() (mb 55));
+  }
+  & .mb-zz2 {
+    @include ss(() (mb 55));
+  }
+  .mint-cell-wrapper{
+    background: none;
+    padding: 0 15px;
+  }
+}

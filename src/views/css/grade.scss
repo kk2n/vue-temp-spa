@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@import 'd:/ws/ss/_sscss-set';
+@import 'd:/ws/ss/_sscss-mixin';
+
+$path: '../../src/img/';
+input[type="search"]{
+  @include ss(() (fz 13)(lh 22px));
+}
+
+.grade{
+  padding-bottom: 54px;
+  & .mint-search{
+    height: 44px;
+  }
+  & .mint-indexsection-index{
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
